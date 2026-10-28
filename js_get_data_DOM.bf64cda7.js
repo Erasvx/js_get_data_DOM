@@ -1,0 +1,2 @@
+"use strict";var total=document.querySelector(".total-population"),average=document.querySelector(".average-population"),populations=document.querySelectorAll(".population"),sum=0;if(populations.forEach(function(t){var o=parseFloat(t.textContent.replace(/,/g,""));if(isNaN(o))throw Error("Error with population validation!");sum+=o}),total.textContent=sum.toLocaleString("en-US"),populations.length>0)average.textContent=(sum/populations.length).toLocaleString("en-US");else throw Error("List of countries is empty!");
+//# sourceMappingURL=js_get_data_DOM.bf64cda7.js.map
